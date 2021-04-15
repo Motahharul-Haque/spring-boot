@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+		<bean id="hello" class="com.durgasoft.beans.User">
+		<property name="name" value="Motahharul haque"></property>
+		<property name="qualification" value="B.Tech"></property>
+		<property name="age" value="25"></property>
+		<property name="address" value="Haque villa Meermanjan Quilaghat"></property>
+		<property name="email" value="mdmotahharul.haque@gmail.com"></property>
+		<property name="mobile_No" value="7836809334"></property>
+		</bean>        
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+		<bean id="wishBean" abstract="true" init-method="init" destroy-method="destroy">
+			<property name="wish_message" value="Durga Software Solutions"/>
+			<property name="name" value="Motahhar"/>
+		</bean>
+		
+		<bean id="helloBean" class="com.durgasoft.beans.HelloBean" parent="wishBean">
+		<property name="wish_message" value="Hello"/>
+		</bean>
+		
+		<bean id="welcomeBean" class="com.durgasoft.beans.WelcomeBean" parent="wishBean">
+		<property name="wish_message" value="Welcome"/>
+		</bean>
+</beans>
